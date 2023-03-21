@@ -7,7 +7,7 @@ import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact';
 import Boutique from './pages/Boutique/Boutique';
 import AboutUs from './pages/AboutUs/AboutUs';
-import Error from './pages/Error';
+import Error from './pages/Error/Error';
 import Api from './Api';
 import Footer from './components/Footer';
 import ScrollToTop from './hooks/ScrollToTop';
@@ -37,6 +37,8 @@ function App() {
   const [tableau4, setTableau4] = useState([]);
   // array section 5 (avis) page accueil
   const [tableau5, setTableau5] = useState([]);
+  //array Correspondant au services multimédia
+  const [tableau6, setTableau6] = useState([]);
   // array section 5 (liste des avis affiché) page accueil
   const [avis, setAvis] = useState([]);
   // array correspondant aux images de catégories principales page services
@@ -53,10 +55,12 @@ function App() {
   const [siteWeb, setSiteWeb] = useState([]);
   //array correspondant a la promo
   const [promo, setPromo] = useState([]);
-
-  //array Correspondant au services multimédia
-  const [tableau6, setTableau6] = useState([]);
-
+  //array serviceweb_section_1
+  const [web1, setWeb1] = useState([]);
+  //array serviceweb_section_2
+  const [web2, setWeb2] = useState([]);
+  //array serviceweb_section_3
+  const [web3, setWeb3] = useState([]);
   useEffect(() => {
     getElement();
   }, []);
@@ -104,10 +108,16 @@ function App() {
       setService(response.data[14]);
       //array correspondant aux images des réalisations de site web
       setSiteWeb(response.data[15]);
+      //array serviceweb_section_1
+      setWeb1(response.data[16]);
+      //array serviceweb_section_2
+      setWeb2(response.data[17]);
+      //array serviceweb_section_3
+      setWeb3(response.data[18]);
       // array correspondant aux logos de marques pour le slider
-      setSlide(response.data[16]);
+      setSlide(response.data[19]);
 
-      console.log(response.data);
+      // console.log(response.data);
     });
   };
 
@@ -147,7 +157,11 @@ function App() {
             path="serviceinfo"
             element={<ServiceInfo service_3={service_3} promo={promo} />}
           />
-          <Route exact path="creaSite" element={<ServiceWeb siteWeb={siteWeb} />} />
+          <Route
+            exact
+            path="creaSite"
+            element={<ServiceWeb siteWeb={siteWeb} web1={web1} web2={web2} web3={web3} />}
+          />
 
           <Route exact path="*" element={<Error />} />
         </Route>

@@ -315,9 +315,6 @@ section.slideMarque .splide__slide {
 .splide__pagination {
   position: initial;
 }
-.splide__list {
-  gap: 50px;
-}
 #section {
   scroll-margin-top: 100px;
 }

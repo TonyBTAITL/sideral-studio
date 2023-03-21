@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default axios.create({
   // En local :
-  baseURL: `http://localhost/api/react/`
+  // baseURL: `http://localhost/api/react/`
   // baseURL: `http://localhost/administration/`
 
   // En ligne :
@@ -11,5 +11,5 @@ export default axios.create({
 
   // Url base bdd ou api du site
 
-  // baseURL: `http://sideral-studio.fr/api/react/`
+  baseURL: `http://sideral-studio.fr/api/react/`
 });
