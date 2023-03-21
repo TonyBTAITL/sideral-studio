@@ -1,0 +1,158 @@
+/* Starting responsive page Accueil */
+/* 
+    320px
+    480px
+    600px
+    768px
+    900px
+    1024px
+    1200px 
+*/
+@media screen and (min-width: 1300px) {
+  #root .headerAccueil {
+    margin-top: 0px;
+  }
+  .AccueilSection2 .right .element {
+    border: none;
+    box-shadow: none;
+  }
+}
+@media screen and (min-width: 1031px) {
+  #root .AccueilSection2 .left .experience-animation {
+    bottom: 95px;
+  }
+
+  #root h2 {
+    font-size: 58px;
+  }
+}
+@media screen and (min-width: 900px) {
+  h1 {
+    gap: 0;
+  }
+  .background-image {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .headerAccueil .header {
+    align-items: start;
+    flex: 0 44%;
+    padding: 0 10px 0 10px;
+    text-align: left;
+  }
+  .header .button {
+    flex-direction: row;
+  }
+  .AccueilSection2 .left .experience-animation {
+    bottom: 270px;
+  }
+  .AccueilSection2 .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .AccueilSection4.container {
+    display: flex;
+  }
+  .AccueilSection5 .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .AccueilSection2 .left,
+  .AccueilSection2 .right {
+    align-items: center;
+    display: flex;
+    flex: 0 50%;
+    justify-content: space-between;
+    margin: initial;
+    padding: 50px 10px;
+  }
+  .AccueilSection4.container .left,
+  .AccueilSection4.container .right,
+  .AccueilSection6.container .right {
+    flex: 0 50%;
+    padding: 50px 0;
+  }
+  .AccueilSection4.container .left,
+  .AccueilSection5 .container .left {
+    gap: 40px;
+    justify-content: center;
+    text-align: left;
+  }
+  .AccueilSection4 .left a,
+  .AccueilSection5 .left a {
+    margin: initial;
+  }
+  .AccueilSection5 .right {
+    flex: 0 40%;
+  }
+  .AccueilSection5 .container .left,
+  .AccueilSection6 .left {
+    flex: 0 50%;
+  }
+  .AccueilSection4 .right .containt .card .element {
+    transform: translateY(10px);
+    transition: 500ms;
+  }
+  .AccueilSection4 .right .containt .card .element .link {
+    opacity: 0;
+    transition: 500ms;
+  }
+  .AccueilSection4 .right .containt .card:hover .element {
+    transform: translateY(0px);
+  }
+  .AccueilSection4 .right .containt .card:hover .element .link {
+    opacity: 1;
+  }
+  section .AccueilSection4 .left .text {
+    align-items: start;
+  }
+  .AccueilSection1 {
+    background: none;
+    margin-top: -40px;
+    padding: 0 10px 50px 10px;
+  }
+  .AccueilSection1 .contenu h2 {
+    margin: auto;
+  }
+  .AccueilSection1 .contenu {
+    gap: 50px;
+  }
+  .headerAccueil,
+  .background-image {
+    min-height: 105svh;
+  }
+  #root .AccueilSection4 .left .text {
+    align-items: start;
+  }
+  #root .AccueilSection6 .left .text {
+    text-align: left;
+  }
+  .AccueilSection6 {
+    flex-direction: row;
+    gap: 20px;
+  }
+  #root .AccueilSection6 .left {
+    text-align: left;
+    justify-content: center;
+  }
+  .AccueilSection6 .left a {
+    margin: initial;
+  }
+}
+@media screen and (min-width: 768px) {
+  .AccueilSection1 .contenu,
+  .AccueilSection4 .left,
+  .AccueilSection5 .left,
+  .AccueilSection6 .left {
+    text-align: center;
+  }
+  .AccueilSection4 .left .text {
+    align-items: center;
+  }
+  .AccueilSection2 .right .element {
+    align-items: center;
+    flex-direction: row;
+    gap: 22px;
+  }
+}

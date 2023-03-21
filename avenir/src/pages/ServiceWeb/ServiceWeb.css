@@ -1,0 +1,400 @@
+.ServiceWebSection1 {
+  padding: 80px 0 0 0;
+}
+.ServiceWebSection1 .header {
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+.ServiceWebSection1 .header h1 {
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  text-transform: none;
+}
+.ServiceWebSection2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 10px;
+}
+.ServiceWebSection2 h2 {
+  color: var(--grey);
+  font-weight: 300;
+  padding: 20px 0 40px 0;
+  text-align: center;
+  width: 100%;
+}
+.ServiceWebSection2 .left {
+  padding: 20px;
+  position: relative;
+  width: 80%;
+}
+.ServiceWebSection2 .image img {
+  border-radius: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+.ServiceWebSection2 .image {
+  margin: auto;
+  position: relative;
+}
+.imageSurvol {
+  max-width: 50%;
+  position: absolute;
+  right: -30px;
+  top: 10%;
+}
+.imageSurvol img {
+  border-radius: 10px;
+  border: 5px solid var(--white);
+  max-width: 200px;
+  width: 100%;
+}
+.ServiceWebSection2 .left {
+  position: relative;
+}
+.ServiceWebSection2 .experience {
+  align-items: center;
+  animation: movinge 10s infinite ease-in-out;
+  background: var(--red);
+  border-radius: 20px;
+  bottom: 5px;
+  color: #fff;
+  display: flex;
+  font-weight: 600;
+  gap: 10px;
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  width: 170px;
+}
+.ServiceWebSection2 .right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: whitesmoke;
+  border-radius: 20px;
+}
+.ServiceWebSection2 .right h2 {
+  color: var(--black);
+  font-size: 7vw;
+  font-weight: 600;
+  text-align: left;
+  padding: 0;
+}
+.ServiceWebSection2 .right .text p {
+  color: var(--grey);
+  line-height: 30px;
+}
+.ServiceWebSection2 .right .liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ServiceWebSection2 .right .liste .sentence {
+  display: flex;
+  gap: 10px;
+}
+.ServiceWebSection2 .right .liste .sentence span {
+  color: var(--red);
+}
+.ServiceWebSection2 .right .liste p {
+  font-weight: 600;
+}
+.ServiceWebSection2 .right .button {
+  align-items: center;
+}
+/* ServiceWebsection3 css boxing*/
+.ServiceWebSection3 {
+  padding: 50px 10px;
+  scroll-margin-top: 4rem;
+}
+.ServiceWebSection3 .containt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.ServiceWebSection3 .box {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 0px 0px 5px 5px;
+  border: 1px solid #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  max-width: 300px;
+  text-align: center;
+  width: 100%;
+}
+.ServiceWebSection3 .box:nth-child(1) {
+  align-items: start;
+  border: none;
+  height: 200px;
+  text-align: left;
+}
+.ServiceWebSection3 .box img {
+  height: 200px;
+  object-fit: cover;
+  transition: 500ms;
+  width: 100%;
+}
+.ServiceWebSection3 .box p {
+  align-items: center;
+  color: var(--black);
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  gap: 10px;
+}
+.ServiceWebSection3 .box p span {
+  color: var(--red);
+  font-size: 30px;
+}
+.ServiceWebSection3 .box h2 {
+  font-size: 40px !important;
+  font-weight: bold;
+}
+.ServiceWebSection3 .box h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ServiceWebSection3 .box .icon {
+  background-color: var(--white);
+  border-radius: 50px;
+  margin-top: -50px;
+  position: relative;
+}
+.ServiceWebSection3 .box .icon span {
+  border-radius: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: var(--red);
+  font-size: 40px;
+  padding: 20px;
+  position: relative;
+  z-index: 9;
+}
+.ServiceWebSection3 .boxing {
+  background-color: #faf5f2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  max-width: 650px;
+  padding: 20px;
+  width: 100%;
+}
+.ServiceWebSection3 .boxing span {
+  color: var(--grey);
+  font-weight: 500;
+  transition: 500ms;
+}
+.ServiceWebSection3 .boxing h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ServiceWebSection3 .boxing .button .firstButton {
+  font-size: 15px;
+  text-transform: initial;
+}
+.ServiceWebSection3 .box .title {
+  margin: 15px 0;
+}
+.ServiceWebSection3 .box .image {
+  max-height: 200px;
+  overflow: hidden;
+}
+/* animation button survole */
+.ServiceWebSection3 .box:hover .icon span {
+  color: var(--white);
+  transition: 500ms;
+}
+.ServiceWebSection3 .box:hover img {
+  filter: brightness(0.7);
+  transform: perspective(500px) translateZ(50px);
+}
+.ServiceWebSection3 .box:hover .icon span::before {
+  height: 90%;
+  width: 90%;
+}
+.ServiceWebSection3 .box .icon span::before {
+  background-color: var(--red);
+  border-radius: 50px;
+  content: '';
+  display: block;
+  height: 0%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 500ms;
+  width: 0%;
+  z-index: -1;
+}
+.ServiceWebSection4 {
+  background-color: #f9f9f9;
+  scroll-margin-top: 4rem;
+}
+.ServiceWebSection4 .containt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 10px;
+}
+.ServiceWebSection4 .boxPrice {
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 375px;
+  padding: 60px 40px;
+  transition: 500ms;
+}
+.ServiceWebSection4 .boxPrice:nth-child(2) {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.ServiceWebSection4 .boxPrice:nth-child(2)::before {
+  background-color: red;
+  color: var(--white);
+  content: 'Recommander';
+  font-size: 12px;
+  padding: 10px 47px;
+  position: absolute;
+  right: -47px;
+  text-transform: uppercase;
+  top: 27px;
+  transform: rotate(45deg);
+}
+.ServiceWebSection4 .boxPrice .list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ServiceWebSection4 .boxPrice .list h4 {
+  color: var(--red);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.ServiceWebSection4 .boxPrice .list li {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.ServiceWebSection4 .boxPrice h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.ServiceWebSection4 .boxPrice .subtitle {
+  color: var(--grey);
+  font-weight: 300;
+}
+.ServiceWebSection4 .boxPrice .price p {
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 700;
+}
+.ServiceWebSection4 .boxPrice .button {
+  align-items: center;
+  margin-top: 20px;
+}
+.ServiceWebSection4 .boxPrice .button .firstButton {
+  cursor: pointer;
+  font-size: 15px;
+}
+/* animation box price */
+.ServiceWebSection4 .boxPrice:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+  transform: translateY(-20px) !important;
+  transition: 500ms !important;
+}
+.ServiceWebSection4 .boxPrice:hover .price p,
+.ServiceWebSection4 .boxPrice:hover .subtitle {
+  color: #fff;
+}
+/* ServiceWebSection5 css*/
+.ServiceWebSection5 {
+  background-size: cover;
+  background-size: cover;
+  padding: 80px 10px;
+}
+.ServiceWebSection5 .containt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  justify-content: center;
+}
+#root .ServiceWebSection5 .containt h2 {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.ServiceWebSection5 .containt h2 span {
+  color: var(--red);
+}
+.ServiceWebSection5 a {
+  box-shadow: rgb(0 0 0 / 75%) 0px 19px 38px, rgb(0 0 0 / 70%) 0px 15px 12px;
+  max-width: 377px;
+  overflow: hidden;
+  width: 377px;
+  margin-bottom: 35px;
+}
+.ServiceWebSection5 .element {
+  position: relative;
+}
+.ServiceWebSection5 .element img {
+  height: 300px;
+  object-fit: cover;
+  transform: perspective(500px) translateZ(50px);
+  transition: 500ms;
+  width: 100%;
+}
+.ServiceWebSection5 .element:hover img {
+  transform: perspective(500px) translateZ(100px);
+}
+.ServiceWebSection5 a .site {
+  align-items: center;
+  background-color: var(--red);
+  border-radius: 50px;
+  color: #00000000;
+  display: flex;
+  font-size: 20px;
+  height: 10px;
+  justify-content: center;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
+  top: 115%;
+  transform: translate(-50%, -50%);
+  transition: top 500ms, width 500ms, height 300ms, border-radius 500ms, color 500ms;
+  transition-delay: 1000ms, 500ms, 1000ms, 500ms, 0ms;
+  width: 10px;
+}
+.ServiceWebSection5 a:hover .element img {
+  filter: brightness(0.5);
+}
+.ServiceWebSection5 a:hover .site {
+  opacity: 1;
+  top: 50%;
+  width: 105%;
+  height: 40px;
+  border-radius: 0px;
+  color: #fff;
+  transition: top 500ms, width 500ms, height 300ms, border-radius 500ms, color 500ms;
+  transition-delay: 0s, 500ms, 1000ms, 500ms, 1000ms;
+}

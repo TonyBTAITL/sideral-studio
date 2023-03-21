@@ -1,0 +1,510 @@
+.header h1 {
+  gap: 20px;
+}
+.header h1 span {
+  color: var(--red);
+}
+.headerAccueil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* max-height: 100lvh; */
+  min-height: 100svh;
+  overflow: hidden;
+}
+.headerAccueil .header {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 78.63px;
+  text-align: center;
+}
+.headerAccueil .header .text {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  gap: 10px;
+}
+.headerAccueil .right {
+  align-items: center;
+  display: flex;
+  flex: 0 50%;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+/* creation des keyframs pour animation du background red */
+@keyframes movinga {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes movingb {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+.headerAccueil .right .image {
+  position: relative;
+}
+.headerAccueil .right .image img {
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+  max-width: 564px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+/* creation du before et after de l'image pour animation */
+.headerAccueil .right .image::before {
+  animation: movingb 7s infinite ease-in-out;
+  background: linear-gradient(58deg, rgb(190, 10, 10) 0%, rgb(107, 15, 15) 100%);
+  border-radius: 20px;
+  content: '';
+  display: block;
+  height: 218px;
+  position: absolute;
+  right: -5px;
+  top: -70px;
+  width: 386px;
+  z-index: 1;
+}
+.headerAccueil .right .image::after {
+  animation: movinga 7s infinite ease-in-out;
+  background: linear-gradient(58deg, rgb(190, 10, 10) 0%, rgb(107, 15, 15) 100%);
+  border-radius: 20px;
+  bottom: -70px;
+  content: '';
+  display: block;
+  height: 218px;
+  left: -25px;
+  position: absolute;
+  width: 386px;
+  z-index: 1;
+}
+.background-image {
+  display: flex;
+  flex-direction: column;
+  /* max-height: 100lvh; */
+  min-height: 100svh;
+  width: 100%;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.informations {
+  align-items: center;
+  background-color: var(--red);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px 0;
+  width: 100%;
+}
+.informations span {
+  font-size: 40px;
+}
+/* css AccueilSection1 */
+.AccueilSection1 {
+  background-color: rgba(242, 242, 242, 0.4588235294);
+  padding: 50px 10px;
+}
+.AccueilSection1 .contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.AccueilSection1 .contenu h2 {
+  color: var(--black);
+  max-width: 828px;
+}
+.AccueilSection1 .widescreen h2 {
+  font-size: 35px;
+}
+.AccueilSection1 .widescreen h2 span {
+  font-weight: 300;
+}
+.AccueilSection1 .widescreen .depannage {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.AccueilSection1 .contenu .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.AccueilSection1 .widescreen .depannage h3 {
+  font-size: 30px;
+  text-align: left;
+}
+.AccueilSection1 .widescreen .depannage .containt {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  text-align: left;
+}
+.AccueilSection1 .widescreen .depannage .containt .left {
+  display: flex;
+  flex: 0 50%;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  text-align: left;
+}
+.AccueilSection1 .widescreen .depannage .containt .right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 0 50%;
+}
+.AccueilSection1 .widescreen .depannage .containt .right img {
+  border-radius: 20px;
+}
+.AccueilSection1 .widescreen .depannage .containt .left p {
+  line-height: 30px;
+}
+.AccueilSection1 .widescreen .depannage .containt .element {
+  border-left: 2px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+/* css AccueilSection2 */
+.AccueilSection2 .left,
+.AccueilSection2 .right {
+  padding: 50px 10px;
+}
+.AccueilSection2 .image img {
+  border-radius: 20px;
+  width: 100%;
+}
+.AccueilSection2 .left {
+  margin: auto;
+  max-width: 600px;
+  position: relative;
+}
+.AccueilSection2 .left .experience-animation {
+  align-items: center;
+  animation: movinge 10s infinite ease-in-out;
+  background: var(--red);
+  border-radius: 20px;
+  bottom: 5px;
+  color: #fff;
+  display: flex;
+  font-weight: 600;
+  gap: 10px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  width: 170px;
+}
+.AccueilSection2 .left .experience-animation .material-symbols-rounded {
+  font-size: 30px;
+}
+/* Créate Animation for experiences level */
+@keyframes movinge {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(-30px);
+  }
+}
+/* Right side in widescreen */
+.AccueilSection2 .right {
+  display: flex;
+  flex-direction: column;
+  flex: 0 40%;
+  gap: 10px;
+}
+.AccueilSection2 .right .element {
+  align-items: end;
+  border-radius: 20px;
+  border: 1px solid #f7f7f7;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+
+  /* 
+     */
+}
+.AccueilSection2 .right .element h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.AccueilSection2 .right .element .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.AccueilSection2 .right .element .text p {
+  color: #666;
+  font-size: 16px;
+}
+.AccueilSection2 .right .element .icon span {
+  font-size: 30px;
+  position: relative;
+}
+/* css AccueilSection3 */
+.AccueilSection3 {
+  background-image: linear-gradient(rgb(255 255 255) 200px, #f9f9f9 143px, #f9f9f9);
+  padding: 50px 10px;
+}
+.AccueilSection3 img {
+  width: 100%;
+}
+/* Css box in slider */
+.AccueilSection3 .box {
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 6%) 0 5px 15px;
+  height: 450px;
+  margin: 20px auto;
+  position: relative;
+  width: 300px;
+}
+.AccueilSection3 .box .image {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.AccueilSection3 .box img {
+  border-radius: 50%;
+  height: 270px;
+  left: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 24%;
+  transform: translate(-50%, -50%);
+  width: 133%;
+}
+.AccueilSection3 .box .icon {
+  font-size: 30px;
+  height: 50px;
+  margin-top: -20px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.AccueilSection3 .box .icon span {
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  color: var(--red);
+  font-size: 40px;
+  padding: 10px;
+}
+.AccueilSection3 .box .text {
+  padding: 20px 10px 40px 10px;
+  text-align: center;
+}
+.AccueilSection3 .box .text h3 {
+  color: black;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.AccueilSection3 .box .text p {
+  font-size: 14px;
+  line-height: 1.7em;
+}
+.splide__pagination {
+  bottom: -1.5em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+/* css pagination du slider */
+.splide__pagination__page {
+  background: #ccc;
+  border-radius: 2px;
+  border: 0;
+  display: inline-block;
+  height: 5px;
+  margin: 7px;
+  opacity: 0.7;
+  position: relative;
+  transition: transform 0.3s linear;
+  width: 20px;
+}
+.splide__pagination__page.is-active {
+  background-color: var(--red);
+}
+/* css AccueilSection4 */
+.AccueilSection4 {
+  padding: 50px 10px;
+}
+.AccueilSection4 p {
+  color: var(--grey);
+  max-width: 600px;
+}
+.AccueilSection4 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.AccueilSection4 .left .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.AccueilSection4 .left a {
+  margin: auto;
+}
+.AccueilSection4 .right {
+  padding: 50px 0 0 0;
+}
+.AccueilSection4 .right .containt {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.AccueilSection4 .right .containCard {
+  flex: 0 50%;
+  position: relative;
+}
+.AccueilSection4 .right .containt a {
+  border-radius: 10px;
+  display: flex;
+  flex: 0 48%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  color: var(--white);
+  text-transform: initial;
+}
+.AccueilSection4 .right .containt a .card {
+  display: flex;
+  justify-content: center;
+}
+.AccueilSection4 .right .containt a .card .element {
+  align-items: start;
+  bottom: 0;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  text-transform: uppercase;
+}
+.AccueilSection4 .right .containt a .card .element h3 {
+  font-size: 20px;
+}
+.AccueilSection4 .right .containt a .card .element .link {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.AccueilSection4 .right .containt img {
+  filter: brightness(0.8);
+  height: 100%;
+  transform: rotate(0deg);
+  transition: 500ms;
+  width: 120%;
+}
+.AccueilSection4 .right .containt a .card:hover img {
+  transform: perspective(500px) translateZ(50px);
+  filter: brightness(0.5);
+}
+/* css AccueilSection5 */
+.AccueilSection5 {
+  background-color: rgba(242, 242, 242, 0.4588235294);
+  padding: 50px 10px 100px 10px;
+}
+.AccueilSection5 p {
+  color: var(--grey);
+}
+.AccueilSection5 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+.AccueilSection5 .testimonial {
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+  justify-content: center;
+  margin: 40px 20px;
+  padding: 20px;
+  text-align: center;
+}
+.AccueilSection5 .testimonial p {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+}
+.AccueilSection5 .testimonial a {
+  color: var(--black);
+  font-weight: 600;
+}
+.AccueilSection5 .left a {
+  margin: auto;
+}
+.AccueilSection5 .testimonial img {
+  width: 64px;
+}
+.AccueilSection5 .testimonialLeft,
+.AccueilSection5 .testimonialLeft .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.stars span {
+  color: #ffbc00;
+}
+/* AccueilSection6 css */
+.AccueilSection6 {
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.AccueilSection6 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.AccueilSection6 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.AccueilSection6 .left a {
+  margin: auto;
+}

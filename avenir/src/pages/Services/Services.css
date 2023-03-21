@@ -1,0 +1,208 @@
+.ServiceSection1 {
+  padding: 80px 0 0 0;
+}
+.ServiceSection1 .header {
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+.ServiceSection2 {
+  padding: 20px 10px;
+}
+.ServiceSection2 .title h2 {
+  font-size: 47px;
+  padding: 20px 0;
+  text-align: center;
+}
+.ServiceSection2 .title h3 {
+  color: var(--grey);
+  font-size: 22px;
+  font-weight: 300;
+  padding: 20px 0;
+  text-align: center;
+}
+.ServiceSection2 .containt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.ServiceSection2 .containt a {
+  color: black;
+  flex: 0 44%;
+  height: 200px;
+  margin: 5px;
+  overflow: hidden;
+  transition: all 500ms;
+}
+.ServiceSection2 .containt .element {
+  height: 200px;
+  position: relative;
+}
+.ServiceSection2 .containt .element h3 {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+}
+.ServiceSection2 .containt .element .image {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.ServiceSection2 .containt .element img {
+  filter: brightness(0.9);
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  width: 100%;
+}
+.ServiceSection2 .containt .element .image span {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  z-index: 1;
+  color: #fff;
+  font-size: 35px;
+  opacity: 0.8;
+  background: #181818;
+  border-radius: 10px 0 0;
+}
+.button_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 50px 0;
+}
+.button_list button {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 500ms;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.button_list button.active {
+  background-color: #be0a0a;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+}
+.button_list button:hover,
+.buttonCategory button:hover {
+  background-color: #d3d3d3;
+}
+.buttonCategory {
+  display: flex;
+  justify-content: center;
+}
+.buttonCategory button {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 500ms;
+}
+.buttonCategory button {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 500ms;
+}
+.ServiceSection3 {
+  padding: 0 10px 50px 10px;
+}
+.ServiceSection3 .containt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px;
+}
+.ServiceSection3 .containt a {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--black);
+  border-radius: 10px;
+}
+.ServiceSection3 .containt a.hide {
+  transform: translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.ServiceSection3 .containt a.hide .text .title,
+.ServiceSection3 .containt a.hide .text .infos,
+.ServiceSection3 .containt a.hide .text .buttonPlus {
+  opacity: 0;
+}
+.ServiceSection3 .containt a.show .text .title {
+  opacity: 1;
+  transition: 500ms;
+  transition-delay: 200ms;
+}
+.ServiceSection3 .containt a.show .text .infos {
+  opacity: 1;
+  transition: 500ms;
+  transition-delay: 300ms;
+}
+.ServiceSection3 .containt a.show .text .buttonPlus {
+  opacity: 1;
+  transition: 500ms;
+  transition-delay: 400ms;
+}
+.ServiceSection3 .containt a.show {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  transition: 500ms;
+}
+.ServiceSection3 .containt .element .image {
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+.ServiceSection3 .containt .element .image img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  transition: 500ms;
+}
+.ServiceSection3 .containt .element .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 10px;
+}
+.ServiceSection3 .containt .element .text h3 {
+  font-size: 18px;
+}
+.ServiceSection3 .containt .element .text .infos p {
+  color: var(--grey);
+}
+.buttonPlus button {
+  background: none;
+  border: none;
+  border: 2px solid #e7e7e7;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 10px;
+  transition: 500ms;
+}
+.ServiceSection3 .containt .element:hover .buttonPlus button {
+  border: 2px solid var(--red);
+}
+
+.ServiceSection3 .containt .element:hover .image img {
+  transform: perspective(500px) translateZ(50px);
+}

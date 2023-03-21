@@ -1,0 +1,148 @@
+.AboutUsSection1 h3,
+.AboutUsSection2 h3,
+.AboutUsSection3 h3,
+.AboutUsSection4 h3 {
+  font-weight: 600;
+}
+.AboutUsSection1 {
+  padding: 80px 0 0 0;
+}
+.AboutUsSection1 h1 {
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  text-transform: none;
+}
+.AboutUsSection1 h1 span {
+  color: var(--grey);
+}
+.AboutUsSection1 .header {
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+.AboutUsSection1 .header h1 {
+  text-transform: uppercase;
+}
+.AboutUsSection1 .section,
+.AboutUsSection2 .section,
+.AboutUsSection3 .section,
+.AboutUsSection4 .section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px;
+}
+.AboutUsSection1 .section .text,
+.AboutUsSection2 .section .text,
+.AboutUsSection3 .section .text,
+.AboutUsSection4 .section .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.AboutUsSection1 .section .text .subText,
+.AboutUsSection2 .section .text .subText,
+.AboutUsSection3 .section .text .subText,
+.AboutUsSection4 .section .text .subText {
+  border-bottom: 1px solid #6666662e;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+}
+.AboutUsSection3 .section .text .subText_cookie {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+}
+.AboutUsSection1 .section .text .subText ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.AboutUsSection1 .liste li {
+  list-style: none;
+}
+.AboutUsSection1 .section .image img,
+.AboutUsSection2 .section .image img,
+.AboutUsSection3 .section .image img,
+.AboutUsSection4 .section .image img {
+  width: 100%;
+}
+.AboutUsSection4 .section .explorer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.AboutUsSection4 .section .explorer .element {
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex: 0 17%;
+  justify-content: center;
+  padding: 10px;
+  transition: 500ms;
+}
+.AboutUsSection4 .section .explorer .element:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+.AboutUsSection4 .section .explorer .element.active {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+.AboutUsSection4 .section .explorer .element img {
+  max-width: 100px;
+  width: 100%;
+}
+.AboutUsSection4 .section .explorer h3 {
+  font-weight: 600;
+}
+.AboutUsSection4 .actions_list {
+  padding: 30px 0;
+}
+.AboutUsSection4 .actions_list .element {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* css aboutSection 5 avec les 3 image du magasin */
+.AboutUsSection5 {
+  padding: 50px 10px 100px 10px;
+}
+.AboutUsSection5 .header {
+  padding-bottom: 50px;
+}
+.AboutUsSection5 .header .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.AboutUsSection5 .containt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.AboutUsSection5 .containt .element {
+  border-radius: 3px;
+  border: 1px solid #ededed;
+  padding: 5px;
+  transition: 500ms;
+  max-width: 392px;
+}
+.AboutUsSection5 .containt .element img {
+  width: 100%;
+}
+.AboutUsSection5 .containt .element:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.AboutUsSection5 .containt .element .subTitle {
+  padding: 10px;
+}

@@ -1,0 +1,116 @@
+nav {
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 4px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+nav.active {
+  top: 0 !important;
+}
+nav .navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul.phone {
+  background-color: var(--white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  display: flex;
+  flex-direction: column;
+  left: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  transition-delay: 0s;
+  transition: left 0.8s;
+  width: 100%;
+}
+nav ul.phone span {
+  cursor: pointer;
+  font-size: 20px !important;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+nav ul.phone li {
+  list-style: none;
+  opacity: 0;
+  padding: 5px 50px;
+  transform: translateX(100px);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1000ms;
+}
+ul.phone.active li {
+  opacity: 1;
+  transform: translateX(0px);
+}
+nav ul.phone li a {
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 600;
+}
+nav .logo img {
+  max-width: 250px;
+}
+nav .logo,
+nav .burger {
+  padding: 20px 10px;
+}
+nav .burger span {
+  color: var(--black);
+  cursor: pointer;
+  font-size: 20px;
+}
+ul.phone.active {
+  left: 0;
+  transition-delay: 0s;
+  transition: left 0.5s;
+}
+ul {
+  align-items: start;
+  display: flex;
+  gap: 40px;
+  padding: 0 10px;
+}
+ul.computer {
+  justify-content: center;
+  align-items: center;
+}
+ul.computer li {
+  list-style: none;
+}
+ul.computer li a {
+  color: var(--black);
+  font-size: 16px;
+}
+ul.computer .firstButton {
+  width: 150px;
+}
+ul.computer .firstButton::before {
+  background-color: var(--black);
+  content: '';
+  height: 192px;
+  left: -83%;
+  position: absolute;
+  top: 27%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  width: 208px;
+}
+ul.computer .firstButton:hover::before {
+  animation: buttonHeader 0.7s;
+}
+@keyframes buttonHeader {
+  0% {
+    left: -60%;
+    top: 27%;
+  }
+  50% {
+  }
+  100% {
+    left: 191%;
+  }
+}

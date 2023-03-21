@@ -1,0 +1,164 @@
+.BoutiqueSection1 {
+  padding: 80px 0 0 0;
+}
+.BoutiqueSection1 .header {
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+.BoutiqueSection2 {
+  background-color: #f7f7f7;
+  padding: 50px 10px;
+}
+.BoutiqueSection2 .title_magasin h3 {
+  color: var(--grey);
+  font-size: 32px;
+  font-weight: 300;
+  padding: 20px 0;
+  text-align: center;
+}
+.BoutiqueSection2 .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 50px 0;
+}
+.BoutiqueSection2 .menu button {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 500ms;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.BoutiqueSection2 .menu button.active {
+  background-color: #be0a0a;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+}
+.BoutiqueSection2 .containt {
+  display: grid;
+  gap: 5px;
+  grid-auto-flow: row;
+}
+.BoutiqueSection2 .containt .highlighted {
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px;
+  position: relative;
+  transition: 500ms;
+}
+.BoutiqueSection2 .containt .highlighted .class,
+.BoutiqueSection2 .containt .highlighted .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.BoutiqueSection2 .containt .highlighted .infos {
+  padding-bottom: 15px;
+}
+.BoutiqueSection2 .containt .element {
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  min-height: 250px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  transition: 500ms;
+}
+.BoutiqueSection2 .containt .element .infos {
+  display: flex;
+  flex-direction: column;
+  flex: 0 60%;
+  gap: 10px;
+  justify-content: center;
+}
+.BoutiqueSection2 .class span {
+  color: var(--grey);
+}
+.BoutiqueSection2 .price {
+  font-size: 30px;
+  font-weight: 600;
+}
+.BoutiqueSection2 .containt .highlighted img {
+  max-width: 300px;
+  width: 100%;
+}
+.BoutiqueSection2 .containt .element img {
+  max-width: 200px;
+  width: 100%;
+}
+.BoutiqueSection2 .new {
+  color: var(--red);
+}
+.BoutiqueSection2 .openDescription {
+  position: absolute;
+  right: 25px;
+  top: -5px;
+}
+.BoutiqueSection2 .openDescription span {
+  cursor: pointer;
+  font-size: 40px;
+  transition: 1s;
+}
+.BoutiqueSection2 .description {
+  backdrop-filter: blur(4px);
+  background-color: #383838;
+  border-radius: 20px 0 0 0;
+  color: var(--white);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(89%);
+  transition: 500ms;
+  width: 65%;
+}
+.BoutiqueSection2 .highlighted .description {
+  backdrop-filter: blur(4px);
+  background-color: #bf0e07;
+  color: var(--white);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(94.6%);
+  transition: 500ms;
+  width: 100%;
+}
+.BoutiqueSection2 .element .description.active,
+.BoutiqueSection2 .highlighted .description.active {
+  background-color: #601c1cf5;
+  border-radius: 0px 0 20px 0;
+  transform: translateY(0px);
+}
+.BoutiqueSection2 .element .description.active .openDescription span,
+.BoutiqueSection2 .highlighted .description.active .openDescription span {
+  transform: rotateX(180deg);
+}
+.BoutiqueSection2 .description p {
+  font-size: 13px;
+  font-style: italic;
+  padding: 40px;
+}
+.BoutiqueSection2 .element:hover,
+.BoutiqueSection2 .highlighted:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

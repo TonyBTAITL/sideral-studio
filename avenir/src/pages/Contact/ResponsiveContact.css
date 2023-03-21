@@ -1,0 +1,54 @@
+@media screen and (min-width: 900px) {
+  #root .ContactSection1 .button {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .ContactSection1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .ContactSection1 h1 {
+    text-transform: none;
+  }
+  /*css special button contact*/
+  .ContactSection1 .button .firstButton,
+  .ContactSection1 .button .secondButton {
+    width: 50%;
+  }
+  /* css formulaire */
+  .ContactSection2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ContactSection2 .left {
+    flex: 0 50%;
+  }
+  .ContactSection2 .right {
+    flex: 0 50%;
+    padding: 0 20px;
+  }
+  .ContactSection2 .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .ContactSection2 form .name,
+  .ContactSection2 form .lastname {
+    flex: 1;
+  }
+  .ContactSection2 form .tel,
+  .ContactSection2 form .mail,
+  .ContactSection2 form .tel,
+  .ContactSection2 form .message,
+  .ContactSection2 form .submit {
+    flex: 0 100%;
+  }
+  iframe {
+    height: 100% !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .ContactSection1 .button {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

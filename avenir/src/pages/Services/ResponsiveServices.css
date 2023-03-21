@@ -1,0 +1,70 @@
+@media screen and (min-width: 900px) {
+  .ServiceSection2 .title h3 {
+    font-size: 32px;
+  }
+  .ServiceSection2 .containt {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .ServiceSection2 .containt a {
+    color: black;
+    flex: 0 23%;
+    height: 400px;
+    margin: 5px;
+    overflow: hidden;
+    transition: all 500ms;
+  }
+  .ServiceSection2 .containt .element {
+    height: 400px;
+    position: relative;
+  }
+  .ServiceSection2 .containt .element .text {
+    background-color: #0009;
+    bottom: 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    transform: translateY(300px);
+    transition: 500ms;
+    width: 100%;
+  }
+  .ServiceSection2 .containt .element .text h4 {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+  }
+  .ServiceSection2 .containt .element .text h4 span {
+    font-size: 16px;
+  }
+  .ServiceSection2 .containt .element .text ul li {
+    font-weight: 300;
+  }
+  /*  animation */
+  .ServiceSection2 .containt a:hover {
+    flex: 0 50%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .ServiceSection2 .containt a:hover .element .text {
+    transform: translateY(0);
+  }
+  section.ServiceSection3 .containt a {
+    flex: 1 32%;
+    max-width: 442px;
+  }
+  .ServiceSection3 .containt {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 600px) {
+  .ServiceSection3 .containt a {
+    flex: 1 48%;
+  }
+  .ServiceSection3 .containt .element .text p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,107 @@
+.ContactSection1 {
+  padding: 80px 0 50px 0;
+}
+.ContactSection1 .header {
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+.ContactSection1 .section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 10px;
+}
+.ContactSection1 h1 {
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  text-transform: none;
+  text-transform: uppercase;
+}
+.ContactSection1 .section .text,
+.ContactSection1 .left .text {
+  display: flex;
+  flex-direction: column;
+}
+.ContactSection1 .section .text .subText,
+.ContactSection1 .left .text .subText {
+  border-bottom: 1px solid #6666662e;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.ContactSection1 h2 span,
+.ContactSection1 h1 span {
+  color: var(--grey);
+}
+.ContactSection1 .button {
+  align-items: center;
+}
+/* css grande taille page contact > 900px */
+.ContactSection1 .left {
+  display: flex;
+  flex-direction: column;
+  flex: 0 50%;
+  gap: 40px;
+  padding: 10px;
+}
+.ContactSection1 .right {
+  align-items: center;
+  display: flex;
+  flex: 0 50%;
+  justify-content: center;
+  padding: 10px;
+}
+.ContactSection1 .right img {
+  width: 100%;
+}
+
+/* css ContactSection2 map */
+.ContactSection2 {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 50px 10px;
+  scroll-margin-top: 4rem;
+}
+.ContactSection2 .right h2 {
+  padding: 30px 0;
+}
+.ContactSection2 .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ContactSection2 form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ContactSection2 form .input span {
+  font-weight: 500;
+}
+.ContactSection2 form input,
+.ContactSection2 form textarea {
+  padding: 10px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
+.ContactSection2 .submit input {
+  width: 100%;
+  border-radius: 50px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 20px;
+}
+iframe {
+  box-shadow: rgb(0 0 0 / 14%) 0px 5px 15px;
+}
+iframe[title='reCAPTCHA'] {
+  box-shadow: none;
+  height: auto;
+}

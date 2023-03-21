@@ -1,0 +1,102 @@
+@media screen and (min-width: 1219px) {
+  .AboutUsSection5 .containt {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .AboutUsSection1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0 0 0;
+  }
+  .AboutUsSection1 .left {
+    display: flex;
+    flex-direction: column;
+    flex: 0 50%;
+    gap: 50px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .AboutUsSection1 .left .text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .AboutUsSection1 .left .text .subText {
+    border-bottom: 1px solid #6666662e;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  .AboutUsSection1 .right {
+    display: flex;
+    flex: 0 40%;
+    justify-content: center;
+  }
+  .AboutUsSection2 {
+    padding: 50px 0;
+  }
+  .AboutUsSection2 .left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 0 40%;
+    justify-content: center;
+  }
+  .AboutUsSection2 .left img {
+    max-width: 500px;
+  }
+  .AboutUsSection2 .right {
+    display: flex;
+    flex-direction: column;
+    flex: 0 50%;
+    justify-content: center;
+  }
+  .AboutUsSection2 .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .AboutUsSection2 h2,
+  .AboutUsSection5 h2 {
+    font-size: 45px;
+  }
+  .AboutUsSection3 .section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+  .AboutUsSection3 img {
+    max-width: 700px;
+  }
+  .AboutUsSection4 .section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 0 50px 0;
+  }
+  .AboutUsSection4 .section .explorer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+  }
+  .AboutUsSection4 .section .explorer .element {
+    flex: 0 50%;
+    max-width: 30%;
+    padding: 20px 10px;
+  }
+  .AboutUsSection4 .actions_list {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-height: 300px;
+  }
+}

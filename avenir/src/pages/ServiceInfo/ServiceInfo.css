@@ -1,0 +1,164 @@
+.ServiceInfoSection1 {
+  padding: 80px 0 0 0;
+}
+.ServiceInfoSection1 .header {
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+.ServiceInfo {
+  display: flex;
+  gap: 20px;
+  padding: 0 10px;
+  position: relative;
+  margin: 50px auto !important;
+}
+.ServiceInfo .menuServiceInfo {
+  position: absolute;
+  height: 100%;
+  z-index: 9;
+}
+.ServiceInfo .menuServiceInfo ul {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  overflow: hidden;
+  transition: 300ms;
+  width: 305px;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ServiceInfo .menuServiceInfo ul.active .openClose {
+  text-align: center;
+}
+.ServiceInfo .menuServiceInfo ul a {
+  align-items: center;
+  background: #efefef;
+  border-radius: 5px;
+  border: 1px solid #e9e9e9;
+  color: var(--black);
+  display: flex;
+  gap: 10px;
+  padding: 10px 8px;
+  width: 300px;
+}
+.ServiceInfo .menuServiceInfo ul a {
+  width: 300px;
+}
+.ServiceInfo .menuServiceInfo ul .openClose span {
+  transform: rotateZ(90deg);
+}
+.ServiceInfo .menuServiceInfo ul a:hover span {
+  transform: rotate(360deg);
+  transition: 500ms;
+}
+.ServiceInfo .menuServiceInfo ul .openClose {
+  cursor: pointer;
+  text-align: right;
+  transition: 500ms;
+}
+.ServiceInfo .menuServiceInfo ul .openClose span.active {
+  transform: rotateZ(0deg);
+}
+.ServiceInfo .menuServiceInfo ul a.active {
+  background-color: #1c1c1c;
+  color: var(--white);
+  transition: 500ms;
+}
+.ServiceInfo .containt {
+  flex: 1 80%;
+  margin-left: 50px;
+}
+.ServiceInfo .menuServiceInfo ul.active {
+  width: 40px;
+}
+.ServiceInfo .menuServiceInfo ul.active a {
+  background: none;
+  color: black;
+  border: none;
+}
+.ServiceInfo .menuServiceInfo ul.active a.active {
+  color: var(--red);
+}
+/* css partie info -- right*/
+.ServiceInfo .containt .infos .image {
+  box-shadow: 0px 0px 0px #b30404;
+  overflow: hidden;
+  transition: all 0.5s;
+  width: 100%;
+}
+.ServiceInfo .containt .infos .image img {
+  width: 100%;
+}
+.ServiceInfo .containt .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ServiceInfo .containt .infos .text p {
+  font-size: 16px;
+  line-height: 2em;
+  color: var(--grey);
+}
+.ServiceInfo .promo {
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 60px 20px;
+  color: var(--white);
+  background-color: #1c1c1c;
+  background-size: cover;
+}
+.ServiceInfo .promo h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ServiceInfo .promo p {
+  font-size: 14px;
+  line-height: 2em;
+  color: var(--grey);
+}
+
+.ServiceInfo .avantApres {
+  max-width: 490px;
+  display: flex;
+  gap: 10px;
+}
+.ServiceInfo .avant,
+.ServiceInfo .apres {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ServiceInfo .avantApres .avant .image,
+.ServiceInfo .avantApres .apres .image {
+  height: 150px;
+  border-radius: 5px;
+}
+.ServiceInfo .avant img,
+.ServiceInfo .apres img {
+  max-width: 100%;
+}
+.ServiceInfo .infos .containt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  margin: 0;
+}
+.ServiceInfo .infos .containt .button button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+}

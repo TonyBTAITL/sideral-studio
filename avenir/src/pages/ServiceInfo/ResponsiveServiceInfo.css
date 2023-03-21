@@ -1,0 +1,16 @@
+@media screen and (min-width: 900px) {
+  .ServiceInfoSection1 .header {
+    border: none;
+    height: 200px;
+  }
+  .ServiceInfo .containt {
+    margin-left: 0px;
+  }
+  .ServiceInfo .menuServiceInfo {
+    position: relative;
+  }
+  .ServiceInfo .menuServiceInfo ul {
+    padding: 0 0 20px 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,51 @@
+/* Responsive css global pages */
+/* 
+    320px
+    480px
+    600px
+    768px
+    900px
+    1024px
+    1200px 
+*/
+@media screen and (min-width: 1300px) {
+  #root h1 {
+    font-size: 60px;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .container .left,
+  footer .container .right {
+    flex: 0 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+  }
+  footer .left,
+  footer .right {
+    flex-direction: row;
+    gap: 0px;
+  }
+  footer .left .element,
+  footer .right .element {
+    flex: 0 50%;
+    padding: 10px;
+  }
+  footer .numero {
+    justify-content: start;
+  }
+}
