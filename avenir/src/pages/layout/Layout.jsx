@@ -25,8 +25,9 @@ const Layout = () => {
                 <span className="material-symbols-rounded">schedule</span>Lundi au Vendredi |
                 9h00-12h00 / 13h30-18h00
               </p>
-              <a href="mailto:av.info@free.fr">
-                <span className="material-symbols-rounded">mail</span>av.info@free.fr
+              <a href="mailto:serviceclient@avenir-informatique.fr">
+                <span className="material-symbols-rounded">mail</span>
+                serviceclient@avenir-informatique.fr
               </a>
               <a href="tel:0141601818">
                 <span className="material-symbols-rounded">call</span>01 41 60 18 18

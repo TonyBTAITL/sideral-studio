@@ -173,7 +173,7 @@
   width: 100%;
 }
 .ServiceSection3 .containt .element .image img {
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   width: 100%;
   transition: 500ms;

@@ -167,12 +167,11 @@
   font-weight: 600;
 }
 .ServiceWebSection3 .box .icon {
-  background-color: var(--white);
-  border-radius: 50px;
   margin-top: -50px;
   position: relative;
 }
 .ServiceWebSection3 .box .icon span {
+  background-color: var(--white);
   border-radius: 50px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   color: var(--red);
@@ -180,6 +179,9 @@
   padding: 20px;
   position: relative;
   z-index: 9;
+}
+.ServiceWebSection3 .box a {
+  color: var(--black);
 }
 .ServiceWebSection3 .boxing {
   background-color: #faf5f2;
@@ -209,7 +211,7 @@
   margin: 15px 0;
 }
 .ServiceWebSection3 .box .image {
-  max-height: 200px;
+  max-height: 166px;
   overflow: hidden;
 }
 /* animation button survole */

@@ -47,7 +47,7 @@ const AboutUsSection2 = () => {
                 <h3>Sites Web :</h3>
                 <p>http://www.avenir-informatique.fr</p>
                 <p>Téléphone : 01.41.60.18.18</p>
-                <p>email : av.info@free.fr</p>
+                <p>email : serviceclient@avenir-informatique.fr</p>
               </div>
               <div
                 className="subText"

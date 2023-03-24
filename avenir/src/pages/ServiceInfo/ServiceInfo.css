@@ -140,7 +140,7 @@
 }
 .ServiceInfo .avantApres .avant .image,
 .ServiceInfo .avantApres .apres .image {
-  height: 150px;
+  height: 220px;
   border-radius: 5px;
 }
 .ServiceInfo .avant img,
@@ -161,4 +161,9 @@
   color: var(--white);
   border: none;
   border-radius: 5px;
+}
+
+.ServiceInfo .containt .infos .firstButton {
+  margin: auto;
+  width: 240px;
 }

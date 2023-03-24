@@ -1,0 +1,50 @@
+.headersectionIdentiteVisuel {
+  padding: 80px 0 0 0;
+}
+.headersectionIdentiteVisuel .header {
+  align-items: center;
+  border-bottom: 2px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionIdentiteVisuel {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  padding: 50px 10px;
+  scroll-margin-top: 150px;
+}
+.sectionIdentiteVisuel .text {
+  color: var(--grey);
+}
+.sectionIdentiteVisuel .right .image img {
+  width: 100%;
+  border-radius: 20px;
+}
+.sectionIdentiteVisuel .left,
+.sectionIdentiteVisuel .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.sectionIdentiteVisuel .left {
+  text-align: center;
+}
+.sectionIdentiteVisuel .left .title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sectionIdentiteVisuel .left .title span {
+  font-size: 30px;
+  color: var(--white);
+  background-color: var(--red);
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 50px;
+}

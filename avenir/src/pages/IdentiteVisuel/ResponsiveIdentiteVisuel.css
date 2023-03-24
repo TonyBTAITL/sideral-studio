@@ -1,0 +1,34 @@
+@media screen and (min-width: 1031px) {
+  #root .sectionIdentiteVisuel .left .title h2 {
+    font-size: 53px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .headersectionIdentiteVisuel .header {
+    border: none;
+  }
+  .sectionIdentiteVisuel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 10px;
+  }
+  .sectionIdentiteVisuel:nth-of-type(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding: 50px 10px;
+  }
+  .sectionIdentiteVisuel .left,
+  .sectionIdentiteVisuel .right {
+    flex: 0 50%;
+  }
+  .sectionIdentiteVisuel .right .image img {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .sectionIdentiteVisuel .left {
+    text-align: left;
+  }
+}

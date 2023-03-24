@@ -15,6 +15,7 @@ import ServiceInfo from './pages/ServiceInfo/ServiceInfo';
 import ServiceWeb from './pages/ServiceWeb/ServiceWeb';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import IdentiteVisuel from './pages/IdentiteVisuel/IdentiteVisuel';
 function App() {
   // Initialisation des effets au scroll
   useEffect(() => {
@@ -162,7 +163,11 @@ function App() {
             path="creaSite"
             element={<ServiceWeb siteWeb={siteWeb} web1={web1} web2={web2} web3={web3} />}
           />
-
+          <Route
+            exact
+            path="identiteVisuelle"
+            element={<IdentiteVisuel web2={web2} slide={slide} />}
+          />
           <Route exact path="*" element={<Error />} />
         </Route>
       </Routes>

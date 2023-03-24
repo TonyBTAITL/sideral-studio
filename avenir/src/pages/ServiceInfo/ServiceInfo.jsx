@@ -87,71 +87,73 @@ const ServiceInfo = (props) => {
                   <div className="image" data-aos="fade-in" data-aos-delay="400">
                     <img src={e.image_description} alt="" />
                   </div>
-                  <div className="title" data-aos="fade-up" data-aos-delay="600">
+                  <div className="title" data-aos="fade-up" data-aos-delay="100">
                     <h2 key={key}>{e.title}</h2>
                   </div>
-                  <div className="text" data-aos="fade-up" data-aos-delay="800">
+                  <div className="text" data-aos="fade-up" data-aos-delay="200">
                     <p>{e.text}</p>
                   </div>
                   {e.text_1 ? (
-                    <div className="text" data-aos="fade-up" data-aos-delay="1000">
+                    <div className="text" data-aos="fade-up" data-aos-delay="300">
                       <p>{e.text_1}</p>
                     </div>
                   ) : (
                     ''
                   )}
                   {e.text_2 ? (
-                    <div className="text" data-aos="fade-up" data-aos-delay="1000">
+                    <div className="text" data-aos="fade-up" data-aos-delay="">
                       <p>{e.text_2}</p>
                     </div>
                   ) : (
                     ''
                   )}
                   {e.text_3 ? (
-                    <div className="text" data-aos="fade-up" data-aos-delay="200">
+                    <div className="text" data-aos="fade-up" data-aos-delay="">
                       <p>{e.text_3}</p>
                     </div>
                   ) : (
                     ''
                   )}
                   {e.text_4 ? (
-                    <div className="text" data-aos="fade-up" data-aos-delay="200">
+                    <div className="text" data-aos="fade-up" data-aos-delay="">
                       <p>{e.text_4}</p>
                     </div>
                   ) : (
                     ''
                   )}
                   {e.text_5 ? (
-                    <div className="text">
+                    <div className="text" data-aos="fade-up" data-aos-delay="">
                       <p>{e.text_5}</p>
                     </div>
                   ) : (
                     ''
                   )}
                   {e.text_6 ? (
-                    <div className="text">
+                    <div className="text" data-aos="fade-up" data-aos-delay="">
                       <p>{e.text_6}</p>
                     </div>
                   ) : (
                     ''
                   )}
                   {e.text_7 ? (
-                    <div className="text">
+                    <div className="text" data-aos="fade-up" data-aos-delay="">
                       <p>{e.text_7}</p>
                     </div>
                   ) : (
                     ''
                   )}
                   {e.text_8 ? (
-                    <div className="text">
+                    <div className="text" data-aos="fade-up" data-aos-delay="">
                       <p>{e.text_8}</p>
                     </div>
                   ) : (
                     ''
                   )}
-
+                  <Link to="/contact" className="firstButton" data-aos="fade-up" data-aos-delay="">
+                    Contactez-nous
+                  </Link>
                   <div className="containt">
-                    <div className="avantApres">
+                    <div className="avantApres" data-aos="fade-up" data-aos-delay="">
                       <div className="avant">
                         <div className="image">
                           <img src={e.avant_1} alt={e.alt_avant_1} />
@@ -164,7 +166,7 @@ const ServiceInfo = (props) => {
                       </div>
                     </div>
 
-                    <div className="avantApres">
+                    <div className="avantApres" data-aos="fade-up" data-aos-delay="">
                       <div className="avant">
                         <div className="image">
                           <img src={e.avant_2} alt={e.alt_avant_2} />

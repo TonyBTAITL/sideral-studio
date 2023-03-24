@@ -58,7 +58,7 @@ const AboutUsSection1 = () => {
             <div className="title">
               <h1 data-aos="fade-up" data-aos-duration="500">
                 Une entreprise moderne,
-                <span>soucieuse de ses clients</span>
+                <span>à l'écoute de ses clients</span>
               </h1>
             </div>
             <div className="text">

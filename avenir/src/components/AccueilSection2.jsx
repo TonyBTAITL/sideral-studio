@@ -9,7 +9,7 @@ const AccueilSection2 = ({ image, tableau2 }) => {
         <div className="container">
           {/* Left side in widescreen */}
           <div className="left">
-            <div className="image">
+            <div className="image" data-aos="fade-right">
               {image.map((e, key) => {
                 if (e.id == 2) {
                   return <img src={e.image} alt={e.alt} key={key} />;
@@ -26,7 +26,7 @@ const AccueilSection2 = ({ image, tableau2 }) => {
             {tableau2.map((e, key) => {
               if (e.id == 1) {
                 return (
-                  <div className="element" key={key}>
+                  <div className="element" key={key} data-aos="fade-up">
                     <div className="icon">
                       <span className="material-symbols-rounded">{e.icon}</span>
                     </div>
@@ -40,7 +40,7 @@ const AccueilSection2 = ({ image, tableau2 }) => {
                 );
               }
               return (
-                <div className="element" key={key}>
+                <div className="element" key={key} data-aos="fade-up" data-aos-delay={e.time}>
                   <div className="icon">
                     <span className="material-symbols-rounded">{e.icon}</span>
                   </div>

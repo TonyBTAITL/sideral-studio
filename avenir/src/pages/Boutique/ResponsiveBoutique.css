@@ -10,7 +10,7 @@
   }
   .BoutiqueSection2 .element:hover .description,
   .BoutiqueSection2 .highlighted:hover .description {
-    background-color: #601c1cf5;
+    background-color: #747474f5;
     transform: translateY(0px);
     border-radius: 0px 0 20px 0;
   }

@@ -39,7 +39,7 @@ const AccueilSection3 = ({ tableau3 }) => {
             <div className="custom-wrapper">
               <SplideTrack>
                 {tableau3.map((e, key) => (
-                  <SplideSlide key={key}>
+                  <SplideSlide key={key} data-aos="fade-up" data-aos-delay={e.time}>
                     <div className="box">
                       <div className="image">
                         <img src={e.image} alt={e.alt} />

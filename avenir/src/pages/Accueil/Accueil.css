@@ -184,9 +184,10 @@
 }
 .AccueilSection1 .widescreen .depannage .containt .left p {
   line-height: 30px;
+  color: var(--grey);
 }
 .AccueilSection1 .widescreen .depannage .containt .element {
-  border-left: 2px solid var(--red);
+  /* border-left: 2px solid var(--red); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -252,9 +253,6 @@
   flex-direction: column;
   gap: 5px;
   padding: 20px;
-
-  /* 
-     */
 }
 .AccueilSection2 .right .element h3 {
   font-size: 15px;
@@ -507,4 +505,7 @@
 }
 .AccueilSection6 .left a {
   margin: auto;
+}
+.AccueilSection6 .left p {
+  color: var(--grey);
 }

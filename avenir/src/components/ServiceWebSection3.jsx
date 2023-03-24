@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-
+import { Link } from 'react-router-dom';
 const ServiceWebSection3 = ({ web2 }) => {
   return (
     <>
@@ -18,6 +18,8 @@ const ServiceWebSection3 = ({ web2 }) => {
                 </div>
               );
             } else if (e.id == 2 || e.id == 3 || e.id == 5 || e.id == 6 || e.id == 7) {
+              const lien = e.title;
+              const str = lien.replace(/\s/g, '');
               return (
                 <div
                   className="box"
@@ -25,15 +27,17 @@ const ServiceWebSection3 = ({ web2 }) => {
                   data-aos-delay="200"
                   data-aos-duration="1000"
                   key={key}>
-                  <div className="image">
-                    <img src={e.image} alt={e.alt} />
-                  </div>
-                  <div className="icon">
-                    <span className="material-symbols-rounded">{e.icon}</span>
-                  </div>
-                  <div className="title">
-                    <h3>{e.title}</h3>
-                  </div>
+                  <HashLink to={`/identiteVisuelle#${str}`}>
+                    <div className="image">
+                      <img src={e.image} alt={e.alt} />
+                    </div>
+                    <div className="icon">
+                      <span className="material-symbols-rounded">{e.icon}</span>
+                    </div>
+                    <div className="title">
+                      <h3>{e.title}</h3>
+                    </div>
+                  </HashLink>
                 </div>
               );
             }
